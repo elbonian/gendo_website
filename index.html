@@ -22,13 +22,33 @@
             max-width: 800px;
             margin: 0 auto;
         }
+        
+        .logo-container {
+            width: 100%;
+            overflow-x: auto;
+            margin-bottom: 3rem;
+        }
 
         pre {
             font-size: 16px;
             line-height: 1.2;
             text-align: left;
-            margin-bottom: 3rem;
             color: #00f5c3; /* Mint green accent */
+            white-space: pre; /* Preserve whitespace */
+            margin: 0;
+        }
+        
+        /* Responsive styles for the ASCII art logo */
+        @media (max-width: 768px) {
+            pre {
+                font-size: 12px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            pre {
+                font-size: 8px;
+            }
         }
         
         h1 {
@@ -79,17 +99,19 @@
 </head>
 <body>
     <div class="container">
-        <pre>
+        <div class="logo-container">
+            <pre>
   
                           _                       
                          | |                      
       __ _  ___ _ __   __| | ___  __  ___   _ ____
      / _` |/ _ \ '_ \ / _` |/ _ \ \ \/ / | | |_  /
     | (_| |  __/ | | | (_| | (_) | >  <| |_| |/ / 
-     \__, |\___|_| |_|\__,_|\___(_)_/\_\\__, /___|
+     \__, |\___|_| |_|\__,_|\___(_)_/\_\\__, |___|
       __/ |                              __/ |    
      |___/                              |___/     
-        </pre>
+            </pre>
+        </div>
 
         <h1>Frequently Asked Questions</h1>
         
